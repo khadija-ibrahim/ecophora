@@ -1,0 +1,917 @@
+
+
+/*Insert CSS Here*/
+
+{box-sizing: border-box;}
+html {font: normal 100%/1.5 'Century Gothic', 'Verdana', 'Arial', sans-serif;}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title"
+        "main"
+        "footer"
+        "masthead";
+}
+
+.masthead {
+    position: relative;
+    margin-bottom: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.btn btn-default dropdown-toggle {
+    width: 25%;
+    height: 25%;
+    border-color: white;
+    border-radius: 0.1rem;
+
+}
+
+.btn btn-default dropdown-toggle:hover {
+    background-color: white;
+}
+
+ul.dropdown-menu {
+    opacity: 0.8;
+    width: 15rem;
+    height: 15rem;
+}
+
+
+.dropdown-menu a {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    color: #863d32;
+    font-size: 1.5rem;
+}
+
+
+.bar {
+    display: none;
+}
+
+.nav-bar {
+    display: flex;
+    position: absolute;
+    top: 0.2em;
+    left: 30rem;
+    z-index: 1; 
+}
+
+.search {
+    padding-left: 2.5rem;
+}
+
+.location {
+    padding-left: 2.5rem;
+}
+
+.shopping-cart {
+    padding-left: 2rem;
+}
+
+/*End of Nav Bar*/
+
+.page-title {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;    
+}
+
+
+.port-phone img {
+    position: absolute; 
+    bottom: 9rem; 
+    left: 10rem;
+    z-index: 2;
+}
+
+
+.page-title h3 {
+    position: absolute;
+    font-family: 'Hobeaux', 'Trebuchet MS', 'Calibri', sans-serif;
+    color: #0a3739;
+    font-size: 1.5rem;
+    bottom: 5rem; 
+    right: 14rem;
+}
+
+
+/*End of Page Title*/
+
+.main-content {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100%;
+}
+
+.menu {
+    position: relative;
+    flex-direction: column;
+}
+
+.menu h1 {
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    left: 40%;
+    top: 45%;
+    color: black;
+}
+
+.menu img {
+    width: 100%;
+    padding: 6rem;
+    transition:  width 0.5s ease, height 0.5s ease, background 0.5s ease-in-out;
+}
+
+.menu img:hover {
+    width: 102%;
+    height: 102%;
+    opacity: 0.5;
+}
+
+.promotions {
+    position: relative;
+}
+
+.promotions h1 {
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    top: 20%;
+    left: 25%;
+}
+
+.promotions h1 span {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 2.5rem;
+}
+
+.promotions h2 {
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    top: 50%;
+    left: 16%;
+}
+
+.promotions img {
+    width: 100%;
+    padding-bottom: 4.5rem;
+}
+
+.promotions button {
+    position: absolute;
+    color: black;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 2rem;
+    background-color: #f4e3d2;
+    border: none;
+    border-radius: 0.9rem;
+    top: 70%;
+    left: 40%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.promotions button:hover {
+    color: #f4e3d2;
+    background-color: black;
+}
+
+.about {
+    margin-top: 3rem;
+}
+
+.about h1 {
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+}
+
+.about img {
+    width: 100%; 
+    padding-bottom: 7rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    transition:  width 0.5s ease, height 0.5s ease, background 0.5s ease-in-out;
+}
+
+.about {
+    position: relative;
+}
+
+.about h1 {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    color: black;
+}
+.about img:hover {
+    width: 102%;
+    height: 102%;
+    opacity: 0.5;
+}
+
+/*Container*/
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    
+}
+
+.events h1 {
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    top: -3%;
+    left: 6%;
+    color: black;
+    font-size: 3rem;
+}
+
+.events img {
+    width: 98%;
+    margin-left: 1%;
+}
+
+
+.gallery h1 {
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    top: 40%;
+    left: 70%;
+    font-size: 3rem;
+}
+
+.gallery img {
+    width: 95%;
+    margin-left: 2rem;
+}
+
+.shop {
+    position: relative;
+    margin-top: 7rem;
+}
+.shop h1 {
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    top: 5%;
+    left: 25%;
+}
+
+.shop img {
+    width: 100%;
+    padding-bottom: 7rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    transition:  width 0.5s ease, height 0.5s ease, background 0.5s ease-in-out;  
+}
+
+.shop img:hover {
+    width: 102%;
+    height: 102%;
+    opacity: 0.5;  
+}
+
+.footer-content {
+    background-color: #863d32;
+    padding: 5rem;
+    color: white;
+    padding-top: 3rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content p {
+    text-align: center;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-content h1 {
+    font-size: 1.3rem; 
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    text-align: center;
+    
+}
+
+.copyright p {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 1.3rem;
+}
+
+/*About Page CSS*/
+.page-title h6 {
+    position: absolute;
+    font-family: 'Hobeaux', 'Trebuchet MS', 'Calibri', sans-serif;
+    color: #0a3739;
+    font-size: 1.5rem;
+    bottom: 5rem; 
+    right: 22rem;
+}
+
+.main-content-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.banner-about img {
+    width:100%;    
+}
+
+.about-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4rem;
+    
+}
+
+.about-bio h1 {
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+}
+
+.heading-3 {
+    display: none;
+}
+
+.about-section img {
+    width: 40rem;
+}
+
+.about-bio p {
+    color: black;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    padding-top: 10%;
+    text-align: justify;
+    line-height: 2.2rem;
+    font-size: 1.3rem; 
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    justify-content: center; 
+}
+
+h1.mission img {
+     width:40rem;   
+}
+
+.heading-3-mission {
+    display: none;
+}
+
+.mission-container h1 {
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.mission-container p {
+    color: black;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    padding-top: 10%;
+    text-align: justify;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+    margin-bottom: 8rem
+}
+
+
+
+/*Shop Page CSS*/
+.page-title h5 {
+    position: absolute;
+    font-family: 'Hobeaux', 'Trebuchet MS', 'Calibri', sans-serif;
+    color: #0a3739;
+    font-size: 1.5rem;
+    bottom: 5rem; 
+    right: 22rem;
+}
+/*filer tab*/
+.filterDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 50%;
+    line-height: 10rem;
+    text-align: center;
+    margin: 4.18rem;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+
+/* Style the buttons */
+.btn-filter {
+    border: none;
+    outline: none;
+    padding-top: 1.7rem;
+    padding-bottom: 2.4rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    background-color: white;
+    cursor: pointer;
+    color: #863d32;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+}
+
+.btn-filter:hover {
+    color: white;
+    background-color: #863d32;
+}
+
+.btn.active {
+    background-color: white;
+    color: #863d32;
+    padding: 2rem;
+    font-size: 1.5rem; 
+    margin-left: 4rem;
+}
+
+.btn.active:hover {
+    background-color: #863d32;
+    color: white;
+}
+
+/*Cards*/
+
+.card-body {
+    background-color: #f4e3d2;
+}
+
+.card-title {
+    color: black;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+.card-text {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+}
+
+a.btn-primary {
+    color: #863d32;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    
+}
+
+a.btn-primary:hover {
+    background-color: #863d32;
+    text-decoration: none; 
+}
+
+.footer-shop p {
+    text-align: center;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    font-size: 1.5rem;
+}
+
+.footer-shop {
+    background-color: #863d32;
+    padding: 5rem;
+    color: white;
+    padding-top: 3rem;
+}
+
+.footer-shop h1 {
+    font-size: 1.3rem; 
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    text-align: center;
+    
+}
+
+.copyright-2 p {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+/*Port Phone Display*/
+
+
+.port-phone {
+    display: block;
+    z-index: 0;   
+}
+
+.desktop {
+    display: none;
+}
+
+
+/*Desktop View*/
+
+@media only screen and (min-width: 60em) {
+    
+.desktop {
+    display: block;
+}
+    
+.port-phone {
+    display: none;
+}
+    
+.bar {
+    position: relative;
+    display: block;
+    width: 100%; 
+    padding-bottom: 0.6rem; 
+}
+    
+.bar h1 {
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    font-size: 3rem;
+}
+    
+.bar h1 button {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 3rem;
+    background-color: #f4e3d2;
+    border: none;
+    border-radius: 0.9rem;
+}
+    
+.page-title {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;    
+}
+    
+.desktop img {
+    position: absolute; 
+    bottom: 30%; 
+    left: 25%;
+    z-index: 2;
+}
+    
+    
+.page-title h3 {
+    position: absolute;
+    font-family: 'Hobeaux', 'Trebuchet MS', 'Calibri', sans-serif;
+    color: #0a3739;
+    font-size: 3rem;
+    bottom: 25%; 
+    right: 34%;
+}
+    
+.masthead {
+    position: relative;
+    margin-bottom: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.btn btn-default dropdown-toggle {
+    width: 25%;
+    height: 25%;
+    border-color: white;
+    border-radius: 0.1rem;
+}
+
+.btn btn-default dropdown-toggle:hover {
+    background-color: white;
+}
+
+
+.dropdown-menu a {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    color: #863d32;  
+}
+
+ul.dropdown-menu {
+    opacity: 0.8;
+    width: 20rem;
+    height: 20rem;
+}
+
+.nav-bar {
+    display: flex;
+    position: absolute;
+    top: 66%;
+    left: 77%;
+    z-index: 1; 
+}
+
+.search {
+    padding-left: 5rem;
+}
+
+.location {
+    padding-left: 5rem;
+}
+
+.shopping-cart {
+    padding-left: 5rem;
+}
+
+.menu h1 {
+    font-size: 8rem;    
+}
+
+.about h1 {
+    font-size: 8rem;
+    top: 60%;
+}
+
+.events h1 {
+    font-size: 6rem;
+    top: 6%;
+}
+
+.gallery h1 {
+    font-size: 6rem;
+    left: 71.5%;
+    top: 45%;
+}
+ 
+.shop h1 {
+    font-size: 8rem;
+    left: 15%;
+    top: 8%;
+}
+    
+.promotions {  
+    display: none;
+}    
+    
+    
+ /*About Page CSS*/
+
+
+.banner-about img {
+    width: 100%;    
+}
+
+.page-title h6 {
+    position: absolute;
+    font-family: 'Hobeaux', 'Trebuchet MS', 'Calibri', sans-serif;
+    color: #0a3739;
+    font-size: 3rem;
+    bottom: 25%; 
+    right: 47%;
+}
+
+.main-content-about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+    
+.about-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.about-bio h1 {
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: white;
+    font-size: 0rem;
+}
+
+.heading-3 {
+    display: block;
+    position: absolute;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    font-size: 4rem;
+    top: 13%;
+    left: 40%;
+}
+
+.about-bio img {
+     width: 40rem;
+}
+
+.about-bio p {
+    color: black;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    padding-top: 10%;
+    text-align: justify;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    
+.mission-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 4rem;
+    justify-content: center; 
+    align-items: center;
+}
+
+h1.mission img {
+     width:40rem;   
+}
+
+.mission-container h1 {
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: white;
+    font-size: 0rem;
+    margin-bottom: 4rem;
+    text-align: right; 
+}
+
+.heading-3-mission {
+     display: block;
+     position: absolute;
+     font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+     font-size: 4rem;
+     top: 55%;
+     left: 3%; 
+}
+
+.mission-container p {
+    color: black;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    padding-top: 10%;
+    padding-right: 5%;
+    text-align: justify;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+    margin-bottom: 8rem
+}
+
+
+/*Shop Page CSS*/
+    
+.bar h2 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    color: black;
+    font-size: 3rem;
+}
+    
+.bar h2 button {
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 3rem;
+    background-color: #f4e3d2;
+    border: none;
+    border-radius: 0.9rem;
+}
+    
+.page-title h5 {
+    position: absolute;
+    font-family: 'Hobeaux', 'Trebuchet MS', 'Calibri', sans-serif;
+    color: #0a3739;
+    font-size: 3rem;
+    bottom: 25%; 
+    right: 47%;
+}
+    
+/*filer tab*/
+.filterDiv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: #ffffff;
+  width: 50%;
+  line-height: 10rem;
+  text-align: center;
+  margin: 1rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+
+/* Style the buttons */
+.btn-filter {
+  border: none;
+  outline: none;
+  padding-top: 1.7rem;
+  padding-bottom: 2.4rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  background-color: white;
+  cursor: pointer;
+  color: #863d32;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.btn-filter:hover {
+   color: white;
+   background-color: #863d32;
+}
+
+.btn.active {
+    background-color: white;
+    color: #863d32;
+    padding: 2rem;
+    font-size: 1.5rem; 
+    margin-left: 4rem;
+}
+
+.btn.active:hover {
+    background-color: #863d32;
+    color: white;
+}
+
+/*Cards*/
+.beans {
+    display: flex;
+    margin-top: 6rem;
+}
+    
+.reusable {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.card-body {
+    background-color: #f4e3d2;
+}
+
+.card-title {
+    color: black;
+    font-family: 'Basic Gothic Pro', 'Arial black', 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+.card-text {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+}
+
+a.btn-primary {
+    color: #863d32;
+    font-family: 'Century Gothic', 'Verdana', 'Arial', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    
+}
+
+a.btn-primary:hover {
+    background-color: #863d32;
+    text-decoration: none; 
+}  
+
+
+    
+    
+    
+    
+/* desktop view closing bracket   */
+    
+}
